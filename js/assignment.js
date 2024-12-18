@@ -8,28 +8,33 @@ const willMeetResolutionElement = document.getElementById("will-meet-resolution"
 const submissionBtn = document.getElementById("submission-btn")
 
 // Declare your variables here.
+const resolution = "Win the Lottery";
+const currentYear = 2025;
+let willMeetResolution = "Unlikely";
 
 function updateYear() {
     // Update this function
-
+    yearElement.innerText = currentYear;
 }
 
 function updateResolution() {
-    // Update this function 
-
+    // Update this function
+    resolutionElement.innerText = resolution;
 }
 
 function updateWillMeetResolution() {
     // Update this function
-
+    willMeetResolutionElement.innerText = willMeetResolution;
 }
 
 function render() {
     // Update this function
-
+    updateYear();
+    updateResolution();
+    updateWillMeetResolution();
 }
 
 submissionBtn.addEventListener("click", function () {
     // Update this function
-
+    render();
 })
